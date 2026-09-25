@@ -4,12 +4,12 @@
   Source project:	https://github.com/SwiftOnSecurity/sysmon-config
   Source license:	Creative Commons Attribution 4.0 | You may privatize, fork, edit, teach, publish, or deploy for commercial use - with attribution in the text.
 
-  Fork version:	1.0
+  Fork version:	1.1
   Fork author:	Tristan Q
   Fork project:	Sysmon Config
   Fork license:	MIT
 
-  REQUIRED: Sysmon version 13 or higher (due to changes in syntax and bug-fixes)
+  REQUIRED: Sysmon version 15 or higher (due to changes in syntax and bug-fixes)
 	https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
 
   TECHNICAL:
@@ -29,7 +29,7 @@
 
 -->
 
-<Sysmon schemaversion="4.50">
+<Sysmon schemaversion="4.91">
 	<!--SYSMON META CONFIG-->
 	<HashAlgorithms>md5,sha256,IMPHASH</HashAlgorithms> <!-- Both MD5 and SHA256 are the industry-standard algorithms. Remove IMPHASH if you do not use DLL import fingerprinting. -->
 	<CheckRevocation/> <!-- Check loaded drivers, log if their code-signing certificate has been revoked, in case malware stole one to sign a kernel driver -->
